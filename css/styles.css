@@ -252,10 +252,10 @@ footer .logo {
 /* ---------------FOOTER join and subscribe*/
 .footer-items {
   padding-top: 12px;
-  width: 100%;
 
   display: flex;
   justify-content: space-between;
+  flex-grow: 1;
 
 }
 
@@ -294,12 +294,15 @@ footer .logo {
 }
 
 .footer-subscribe-input {
+  color: var(--primary-white-color);
+
   width: 358px;
   height: 50px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: inherit;
+  outline: none;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
   padding-left: 16px;
@@ -843,8 +846,6 @@ footer .logo {
 }
 
 /* modal-form */
-.modal-form {
-}
 
 .modal-form-label {
   position: relative;
@@ -896,6 +897,8 @@ footer .logo {
   width: 100%;
   min-height: 120px;
 
+  resize: none;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
@@ -930,7 +933,7 @@ footer .logo {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 
-  margin-bottom: 30px;
+  margin: 0 auto 30px 12px;
   display: flex;
   align-items: center;
 }
@@ -966,6 +969,7 @@ footer .logo {
 .modal-send-button {
   width: 200px;
   height: 50px;
+  margin: 0 auto;
 
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
